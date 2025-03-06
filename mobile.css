@@ -308,7 +308,7 @@
     }
 
     .offer-page-background-img-container{
-        height: 50vh;
+        height: 40vh;
     }
     
     .offer-page-content-container{
@@ -493,9 +493,7 @@
         width: 100%;
         align-items: center;
     }
-    .faq-right-container{
-        margin-bottom: 140px;
-    }
+ 
     .faq-left-detail-container,
     .faq-right-detail-container {
         width: 95%;
