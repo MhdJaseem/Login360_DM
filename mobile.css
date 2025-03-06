@@ -1,0 +1,668 @@
+
+@media (max-width: 560px) {
+    main{
+        height: 795vh;
+    }
+    .header-container {
+        padding: 0px 10px;
+        height: 50px;
+    }
+
+    header img {
+        width: 120px;
+        height: 30px;
+    }
+
+    .header-para {
+        font-size: 8px;
+    }
+    .nav-container {
+        font-size: 14px;
+        height: 30px;
+    }
+    .home-container {
+        display: none;
+    }
+    .home-btn-mobile {
+        display: block;
+        margin-top: 0px;
+        font-size: 11px;
+        width: 140px;
+        height: 24px;
+        border-radius: 4px;
+
+    }
+    .home-btn::before{
+        align-items: normal;
+    }
+    /* ---------Home section for mobile--------- */
+    .home-container-mobile {
+        width: 100%;
+        height: 90vh;
+        padding: 10px 10px 10px 0px;
+        font-family: var(--fontpoppins);
+        position: relative;
+        display: block;
+        background-image: url(./images/black-wavy-lines-abstract-background\ 2.png);
+        background-repeat: no-repeat;
+    }
+    .home-content-mobile {
+        width: 285px;
+        height: 150px;
+        /* background-color: antiquewhite; */
+        position: absolute;
+        right: 0;
+    }
+    .master-text {
+        font-size: 18px;
+    }
+    .marketing-text{
+        font-size: 45px;
+        line-height: 44px;
+    }
+    .home-form-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 270px;
+
+    }
+        
+
+    /* --------------- inverted scroll container ------------------------ */
+    .inverted-scroll-container {
+        position: relative;
+        top: 0px;
+        overflow: hidden;
+        /* height: 150vh; */
+        margin-top: 0px;
+        padding-bottom: 100px;
+    }
+
+    .second-inverted-scroll-container{
+        position: relative;
+        top: 40px;
+        z-index: 10;
+    }
+
+    .inverted-scroll-container-heading{
+        display: block;
+        width: 100% ;
+        margin-top: 15vh;
+    }
+
+    .inverted-scroll-container-heading-text{
+        display: block;
+        position: absolute;
+        text-shadow: 0px 2.481px 1.241px rgba(0, 0, 0, 0.25);
+        font-family: "Poppins";
+        font-size: 30.462px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        top: 15vh;
+        left: 0px;
+        right: 0px;
+        text-align: center;
+        background: linear-gradient(180deg, #000 18.28%, #666 62.82%, #000 95.39%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-transform: uppercase;
+    }
+
+    .inverted-scroll-container-heading-text2{
+        display: none;
+    }
+
+
+    .sub-inverted-scroll-container {
+        margin-top: 65px;
+    }
+
+    .inverted-scroll-top-img {
+        display: none;
+    }
+
+    .responsive-inverted-top-img {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        top: -40px;
+        left: 0px;
+        right: 0px;
+        z-index: 2;
+    }
+
+    .inverted-scroll-bottom-img {
+        position: absolute;
+        width: 154vw;
+        height: 24vh;
+        /* bottom: -14vh; */
+        left: -26vw;
+        top: 440px;
+        z-index: 2;
+    }
+
+    .inverted-scroll-middle-img {
+        width: 100%;
+        max-width: 400px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 25px;
+        z-index: 1;
+        scroll-behavior: smooth;
+    }
+
+    .inverted-scroll-middle-img  {
+        min-width: 100%;
+        display: block;
+    }
+
+    /* Hide scrollbar */
+    .inverted-scroll-middle-img::-webkit-scrollbar {
+        display: none;
+    }
+    .inverted-scroll-middle-img {
+        scrollbar-width: none;
+    }
+
+    .inverted-scroll-middle-third-img {
+        width: 291px;
+        height: 485px;
+        /* margin-left: 20px;
+        margin-right: 20px; */
+    }
+
+    .inverted-scroll-middle-second-img,
+    .inverted-scroll-middle-fourth-img {
+        width: 270px;
+        height: 485px;
+    }
+
+    .inverted-scroll-middle-first-img,
+    .inverted-scroll-middle-fifth-img {
+        width: 25px;
+        height: 480px;
+    }    
+
+    
+    /* ------------------------------------------------------------------ */
+
+    /* -------review container------------------------------------------ */
+
+    .review-container {
+        position: relative;
+        top: 0px;
+    }
+    .review-heading-img-container{
+        width: 100%;
+        height: 82.765px;
+    }
+
+    .review-heading-text-container{
+        width: 100%;
+        height: 45px;
+        font-size: 28px;
+    }
+
+    .review-web-img-container{
+        display: none;
+    }
+
+    .review-mobile-img-container{
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        margin-top: 10px;
+    }
+
+    .review-lower-text-container{
+        width: 100%;
+        height: 26px;
+        font-size: 21.558px;
+        margin-top: 20px;
+        margin-bottom: 16.5px;
+    }
+
+    .review-lower-button-container{
+        width: 70%;
+        height: 29px;
+        padding: 7.186px 36.267px;
+        gap: 5.988px;
+        border-radius: 23.355px;
+        box-shadow: 0px 0px 8.983px 0px rgba(0, 0, 0, 0.58) inset;
+        text-shadow: 0px 0px 3.593px rgba(255, 255, 255, 0.61);
+        font-size: 13.174px;
+    }
+
+    /* ----------------------------------------------------------------- */
+
+    /* -----------------------------Why choose login360------------------------------------ */
+    .why-login-360-container {
+        height: 700px;
+        position: relative;
+        top: 10px;
+    }
+    .sub-why-login-360-container{
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        position: absolute;
+    }
+    .sub-why-login-360-left-container-text2-scroll{
+        height: 28vh;
+    }
+
+    .sub-why-login-360-left-container-text1{
+        text-align: center;  
+        font-size: 38.81px;
+    }
+
+    .sub-why-login-360-left-container-text2{
+      
+        display: flex;
+        width: 366px;
+        height: 193px;
+        align-items: center;
+        flex-shrink: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .why-login-360-containe-icon1 {
+        width: 150px;
+        height: 150px;
+    }
+
+    .end-to-end-text{
+        font-size: 48px;
+        width: 100%;
+    }
+
+    .placement-supports-text{
+        font-size: 42px;
+        width: 100%;
+    }
+    .sub-why-login-360-right-container-img {
+        gap: 20px;
+        padding: 30px 0px;
+    }
+    .why-login-360-containe-image1{
+        width: 100px;
+    }
+
+    .why-login-360-container-text{
+        font-size: 15px;
+    }
+    .why-login-360-containe-image5{
+        width: 140px;
+        height: 25px;
+    }
+    /* ----------------------------------------------------------- */
+    /* -------------------------Claim your offer page------------------------ */
+    .offer-page-container{
+        height: fit-content;
+    }
+
+    .offer-page-background-img-container{
+        height: 50vh;
+    }
+    
+    .offer-page-content-container{
+        top: 3vh;
+    }
+
+    .offer-page-content-heading-container{
+        font-size: 1.5rem;
+        margin-bottom: 2vh;
+    }
+
+    .offer-page-content-old-price-container{
+        font-size: 2rem;
+        background: linear-gradient(162deg, #666 35.9%, #333 54.03%, #666 72.5%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .offer-page-content-old-price-cross-container{
+        top: -1vh;
+        left: 0vw;
+        width: 100%;
+    }
+
+    .offer-page-content-new-price-container{
+        font-size: 2.5rem;
+        background: linear-gradient(93deg, #C65A0C 0%, #FF7A19 31.87%, #FF7A19 65.38%, #C65A0C 108.42%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .offer-page-lastline-content-container{
+        display: none;
+    }
+
+    .offer-page-lastline-top-mobile-response-content-container{
+        display: block; 
+        color: #868383;
+        font-size: 14px;
+    }
+
+    .offer-page-lastline-bottom-mobile-response-content-container{
+        display: block;
+        color: #f7f7f7;
+        text-align: center;
+        position: absolute;
+        bottom: 7vh;
+        left: 0;
+        right: 0;
+        font-size: 14PX;
+    }
+
+    .offer-page-register-button{
+        width: 232px;
+        height: 29px;
+        padding: 7px 68px;
+        gap: 6px;
+        border-radius: 23.355px;
+        box-shadow: 0px 0px 8.983px 0px rgba(0, 0, 0, 0.58) inset;
+        text-shadow: 0px 0px 3.593px rgba(255, 255, 255, 0.61);
+        font-size: 13.174px;
+        position: absolute;
+        bottom: -15px;
+    }
+    /* -------------------------------------------------- */
+
+    /* ------------------------Tools section--------------------- */
+    .tool_you_learn_main_container{
+        padding: 0px;
+        padding-top: 30px;
+    }
+    .tool_you_learn_container-web{
+        display: none;
+    }
+
+    .tool_you_learn_container-mobile{
+        display: block; 
+    }
+
+    .tool_you_learn_heading_text{
+        font-size: 32.731px;
+    }
+
+    .tool_you_learn_container-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:0px 20px;
+        height: fit-content;
+        background-color: #f4f4f4;
+    }
+    
+    .sub-tool_you_learn_container-mobile {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 15px; 
+        max-width: 600px; 
+        justify-items: center;
+    }
+    
+    .sub-tool_you_learn_container-mobile2 {
+        display: flex;
+        justify-content: space-around; 
+        width: 100%;
+        max-width: 300px; 
+    }
+
+    .tool_you_learn_main_img{
+        width: 55px;
+        height: 55px;
+    }
+    
+    .tool_you_learn_img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        border-radius: 10px; 
+    }
+    /* ---------------------------------------------------------- */
+
+    /* ----------------------benifits beyond container ---------------- */
+
+    .main-learing-list {
+        top: 30px;
+        background-color: #f4f4f4;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .sub-learing-img{
+        width: 95%;
+        height: 100px;
+
+    }
+    .sub-learing-text{
+        width: 100%;
+        font-size: 27px;
+        top: 40px;
+    }
+    .main-sub-learing-img1{
+        width: 197.799px;
+        height: 197.799px;
+
+    
+    }
+
+    /* ------------------------------------------------------------------ */
+
+    /* ------------------------------ FAQ Container -------------------- */
+
+    .faq-container {
+        position: relative;
+        top: 30px;
+        height: fit-content;
+    }
+    .faq-heading-container {
+        width: 100%;
+    }
+    .faq-heading-text-container {
+        font-size: 21px;
+        left: 0px;
+        top: 2vh;
+        right: 0px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .faq-heading-img-container {
+        height: 81px;
+    }
+    
+    .sub-faq-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .faq-left-container,
+    .faq-right-container {
+        width: 100%;
+        align-items: center;
+    }
+
+    .faq-left-detail-container,
+    .faq-right-detail-container {
+        width: 95%;
+        max-width: 400px;
+    }
+
+    .faq-summary {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .faq-content {
+        font-size: 14px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    /* ----------------------------------------------------------------- */
+
+    /* ----------------- claim your offer ------------------------------ */
+    
+    .main-claim-your-offer{
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        display: block;
+        position: fixed;
+        z-index: 100;
+        /* top: 400px; */
+        bottom: -100px; 
+        left: 0;
+        display: none;
+        
+    }
+    .main-claim-your-offer.active {
+        display: block;
+        bottom: 0;
+    }
+    .claim-your-offer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        background-color: black;
+        width: 100%; 
+        height: 150px;
+        gap: 15px;
+    }
+    
+    .claim-your-offer-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sub-claim-your-offer-button{
+        text-align: center;
+        display: flex;
+        color: #ffffff;
+        padding: 8.57px 50.413px;
+        justify-content: center;
+        align-items: center;
+        gap: 7.142px;
+        flex-shrink: 0;
+        border-radius: 27.852px;
+        background: #FF7A19;
+        border: 1px solid #FF7A19;
+        box-shadow: 0px 0px 10.712px 0px rgba(0, 0, 0, 0.58) inset;
+        color: #FFF;
+        text-shadow: 0px 0px 4.285px rgba(255, 255, 255, 0.61);
+        font-family: "Poppins";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+    }
+    .claim-your-offer-text{
+        color: azure;
+        display: flex;
+        justify-content: space-around;
+        padding: 0px 20px;
+        /* position: relative; */
+    }
+    .sub-claim-your-offer-text{
+       display:flex;
+       justify-content: left;
+       background: linear-gradient(270deg, #D2D2D2 0.03%, #C8BFBF 21.71%, #C7C7C7 108.41%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Poppins";
+        font-size: 14.137px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        
+    }
+    .claim-your-offer-text-time{
+        color: #FF7A19;
+        font-family: "Poppins";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-top: 5%;
+    }
+
+    :root {
+        --progress-bar-width: 50px;
+        --progress-bar-height: 50px;
+        --font-size: 1rem;
+      }
+      
+      .circular-progres-container {
+        background-color: #100c08;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Poppins";
+      }
+      .circular-progress {
+        width: var(--progress-bar-width);
+        height: var(--progress-bar-height);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .inner-circle {
+        position: absolute;
+        width: calc(var(--progress-bar-width) - 10px);
+        height: calc(var(--progress-bar-height) - 10px);
+        border-radius: 50%;
+        background-color: black;
+      }
+      
+      .percentage {
+        position: relative;
+        font-size: var(--font-size);
+        color: rgb(0, 0, 0, 0.8);
+      }
+    /* .claim-your-offer-text-end{
+        position: absolute;
+        top: 0;
+        left: 5vw;
+    } */
+    
+    /* .claim-your-offer-text-img{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 0;
+        right: 22vw;
+        object-fit: cover;
+    } */
+    .claim-your-offer-text-img-text{
+        /* position: absolute; */
+        top:0 ;
+        right: 3vw;
+        color: #FFF;
+        font-family: "Poppins";
+        font-size: 12.566px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-top: 4%;
+    
+    }
+
+
+    /* ----------------------------------------------------------------- */
+}

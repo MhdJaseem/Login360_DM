@@ -1,0 +1,1067 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --fontpoppins: "Poppins", serif;
+    --fontmontserrat: "Montserrat", serif;
+    --fontroboto: "Roboto", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    background-color: #f4f4f4;
+}
+
+/* ----------------Header section-------------------  */
+.header-container {
+    width: 100%;
+    height: 76px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+
+}
+
+.header-para {
+    font-family: var(--fontpoppins);
+    color: #464646;
+    text-transform: uppercase;
+}
+
+/* ----------------end-------------------  */
+
+/* -----------------Navbar section---------------------- */
+.nav-container {
+    background-color: #3B3B3B;
+    width: 100%;
+    height: 37px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fontpoppins);
+    letter-spacing: 3px;
+}
+
+/* ----------------end-------------------  */
+
+/* -------------------Home section-------------------- */
+.home-container {
+    max-width: 100%;
+    height: 550px;
+    /* background-color: antiquewhite; */
+    background-image: url(./images/black-wavy-lines-abstract-background2.png);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-image-container {
+    width: 33%;
+    height: 480px;
+    /* background-color: lightblue; */
+    display: flex;
+    justify-content: end;
+}
+
+.home-content-container {
+    width: 33%;
+    height: 360px;
+    /* background-color: lightcyan; */
+    text-align: center;
+    font-family: var(--fontpoppins);
+    text-transform: uppercase;
+}
+
+.home-heading-text {
+    text-align: left;
+}
+
+.master-text {
+    color: #FF7B19;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.marketing-text {
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 800;
+}
+
+.home-btn {
+    width: 160px;
+    height: 33px;
+    border: none;
+    background-color: #1E1E1E;
+    border-radius: 6px;
+    letter-spacing: 0.8px;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: relative;
+    overflow: hidden;
+    color: transparent;
+}
+.home-btn-mobile {
+    display: none;
+}
+.home-btn::before {
+    content: "Get Full Syllabus";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+    background: linear-gradient(to right, #D2D2D2 34%, #9B9B9B 46%, #D2D2D2 54%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home-btn i {
+    color: #D2D2D2;
+    position: relative;
+}
+
+.home-form-container {
+    width: 33%;
+    height: 490px;
+    padding: 20px;
+    font-family: var(--fontpoppins);
+}
+
+.home-form {
+    width: 320px;
+    height: 450px;
+    border: 1px solid #1E1E1E;
+    border-radius: 18px;
+    box-shadow: 0 0 5px gray;
+    padding: 15px;
+    background-color: #FFFFFF;
+
+}
+
+.form-para {
+    color: #FF7B19;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.form-input {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.input-data {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.input-data input {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
+}
+
+.input-data input:focus~label,
+.input-data input:valid~label {
+    transform: translateY(-20px);
+    font-size: 10px;
+    color: #3498db;
+}
+
+.input-data label {
+    position: absolute;
+    pointer-events: none;
+    bottom: 10px;
+    left: 0;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    color: #888;
+}
+
+.input-data .underline {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+
+.input-data .underline:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #3498db;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.input-data input:focus~.underline:before,
+.input-data input:valid~.underline:before {
+    transform: scale(1);
+}
+
+.radio-group {
+    color: #888;
+}
+
+.radio-input-div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+    margin: 20px 30px;
+}
+
+.btn-div {
+    text-align: center;
+}
+
+.form-btn {
+    width: 240px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid #FF7B19;
+    background: linear-gradient(93deg, #cf6718 4.03%, #FF7B19 39.19%, #FF7B19 82.41%);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.58) inset;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: 500;
+    text-shadow: 0 0 2px #FFFFFF;
+}
+
+input[type="radio"] {
+    accent-color: #FF7B19;
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.home-container-mobile {
+    display: none;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fontpoppins);
+}
+.modal-content {
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+.close-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.btn-div {
+    text-align: center;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fontpoppins);
+    z-index: 1000;
+}
+
+.popup-box {
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+}
+
+/* Close Button */
+.close-popup {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ffff;
+}
+
+/* Mobile Styles */
+@media (max-width: 560px) {
+    .popup-overlay {
+        z-index: 1000;
+    }
+    .popup-box {
+        width: 90%;
+    }
+
+    .mobile-btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+
+/* --------------------------end---------------------- */
+
+/* ----------------- Inverted scroll container --------------- */
+
+.inverted-scroll-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+    /* margin-top: 30px; */
+    height: fit-content;
+
+}
+
+.inverted-scroll-container-heading {
+    display: none;
+}
+
+.inverted-scroll-container-heading-text {
+    display: none;
+}
+
+.sub-inverted-scroll-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    margin-top: 30px;
+    position: relative;
+}
+
+
+.inverted-scroll-top-img {
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+    height: 227px;
+
+}
+
+.inverted-scroll-container-heading-text2 {
+    position: absolute;
+    z-index: 2;
+    left: 33vw;
+    top: 5vh;
+    text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    font-family: "Poppins";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(180deg, #000 18.28%, #666 62.82%, #000 95.39%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.responsive-inverted-top-img {
+    display: none;
+}
+
+.inverted-scroll-middle-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.inverted-scroll-middle-first-img,
+.inverted-scroll-middle-fifth-img {
+    width: 84px;
+    height: 980px;
+}
+
+.inverted-scroll-middle-second-img,
+.inverted-scroll-middle-fourth-img {
+    width: 350px;
+    height: 887px;
+    flex-shrink: 0;
+    z-index: 0;
+    object-fit: contain;
+}
+
+
+.inverted-scroll-middle-third-img {
+    width: 350px;
+    height: 616px;
+    flex-shrink: 0;
+    z-index: 0;
+    object-fit: contain;
+}
+
+.inverted-scroll-bottom-img {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+    width: 100%;
+    height: 230px;
+}
+
+/* ----------------------------------------------------------- */
+/*  --------------- review container ------------------------- */
+
+
+.review-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    background-color: #f4f4f4;
+    font-family: var(--fontpoppins);
+}
+
+.review-heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.review-heading-img-container {
+    width: 100%;
+    height: 117px;
+    opacity: 0.5;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.60) 0%, rgba(102, 102, 102, 0.60) 58.34%, rgba(0, 0, 0, 0.60) 118.65%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    mix-blend-mode: difference;
+}
+
+.review-heading-text-container {
+    position: absolute;
+    width: 702px;
+    height: 92px;
+    top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    font-family: "Poppins";
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 700;
+    background: linear-gradient(180deg, #000 18.28%, #666 62.82%, #000 95.39%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: normal;
+}
+
+.review-web-img-container {
+    width: 100%;
+    object-fit: cover;
+}
+
+.review-mobile-img-container {
+    display: none;
+}
+
+.review-lower-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* font-family: var(); */
+}
+
+.review-lower-text-container {
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+    height: 44px;
+    color: #060606;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 39px;
+}
+
+.review-lower-button-container {
+    display: flex;
+    width: 284px;
+    height: 50px;
+    padding: 15px 49px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 39px;
+    border: #FF7A19;
+    background: linear-gradient(93deg, #C65A0C 0%, #FF7A19 31.87%, #DA6510 65.38%, #C65A0C 108.42%);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.58) inset;
+    color: #FFF;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.61);
+    font-family: "Poppins";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* -------------------------------------------------------------- */
+
+/* ----------------------------Why choose login360---------------------------------- */
+.why-login-360-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    color: azure;
+    font-family: var(--fontpoppins);
+}
+
+.sub-why-login-360-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.sub-why-login-360-left-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+}
+
+
+.sub-why-login-360-left-container-text1 {
+    font-size: 56px;
+    font-weight: 600;
+    text-align: start;
+    background: linear-gradient(180deg, #7F7F7F 18%, #FFF 53%, #7F7F7F 86%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
+}
+
+.sub-why-login-360-left-container-text2-scroll {
+    height: 46vh; /* Control the visible height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    line-height: 50px;
+}
+
+.sub-why-login-360-left-container-text2 {
+    font-size: 60px;
+    font-weight: 700;
+    text-align: start;
+    background: linear-gradient(109deg, #7F7F7F 11%, #FFF 40%, #7F7F7F 68%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Show only the active text */
+.sub-why-login-360-left-container-text2.active {
+    opacity: 1;
+}
+
+.end-to-end-text {
+    font-size: 70px;
+    font-weight: 700;
+    background: linear-gradient(93deg, #C65A0C 0%, #FF7A19 31.87%, #FF7A19 65.38%, #C65A0C 108.42%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.why-login-360-containe-icon1 {
+    width: 230px;
+    height: 180px;
+}
+.why-login-360-containe-image1 {
+    padding: 20px;
+}
+.why-login-360-container-text {
+    font-size: 20px;
+    font-weight: 600;
+}
+.placement-supports-text {
+    font-size: 55px;
+    line-height: 1.2;
+    background: linear-gradient(109deg, #7F7F7F 11.55%, #FFF 40.93%, #7F7F7F 68.5%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 75px;
+}
+
+.sub-why-login-360-right-container-img{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    gap: 30px 50px;
+    flex-wrap: wrap;
+}
+/* ----------------------------------------------------------------- */
+/* <!-- ----------------------Claim your offer section-------------------------- --> */
+
+.offer-page-container{
+    background-color: rgba(0, 0, 0, 2);
+    position: relative;
+    height: 95vh;
+    font-family: var(--fontpoppins);
+}
+
+.offer-page-background-img-container{
+    width: 100%;
+    background-size: cover;
+    height: 95vh;
+}
+
+.offer-page-content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 4vh;
+    left: 0;
+    right: 0;
+}
+
+.offer-page-content-heading-container{
+    color: black;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(180deg, #F7F7F7 0%, #C4C2C2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.offer-page-content-old-container{
+    position: relative;
+}
+
+.offer-page-content-old-price-container{
+    text-align: center;
+    font-size: 97.668px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(180deg, #666 18.28%, #FFF 95.39%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.offer-page-content-old-price-cross-container{
+    position: absolute;
+    top: -45px;
+    left: -4vw;
+}
+
+.offer-page-content-new-price-container{
+    text-shadow: 0px 0px 2px #FF8328;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1;
+    background: linear-gradient(93deg, #C65A0C 0%, #FF8832 31.87%, #F66C08 50.18%, #FF8B37 65.38%, #C65A0C 108.42%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 138px;
+}
+
+.offer-page-content-new-price-icon-container{
+    font-family: "Poltawski Nowy";
+    font-weight: 900;
+}
+
+.offer-page-lastline-content-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 50px;
+    color: #F7F7F7;
+    position: absolute;
+    bottom: 2vh;
+    font-size: 28px;
+}
+
+.offer-page-lastline-top-mobile-response-content-container,
+.offer-page-lastline-bottom-mobile-response-content-container{
+    display: none;
+}
+
+.offer-page-register-button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer-page-register-button{
+    display: flex;
+    width: 284px;
+    height: 50px;
+    padding: 12px 51px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border: 1px solid #FF8328;
+    border-radius: 39px;
+    background: linear-gradient(93deg, #C65A0C 0%, #FF7A19 31.87%, #DA6510 65.38%, #C65A0C 108.42%);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.58) inset;
+    color: #FFF;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.61);
+    font-size: 22px;
+    font-weight: 600;
+    position: absolute;
+    bottom: -25px;
+    
+}
+/* ------------------------------------------------------------------ */
+
+/* ----------------------------Tools section----------------------------------- */
+.tool_you_learn_main_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 30px 0;
+}
+
+.tool_you_learn_sub_container{
+    position: relative;
+}
+
+.tool_you_learn_heading_img{
+    opacity: 1;
+    background: linear-gradient(176deg, rgba(0, 0, 0, 0.60) -10.69%, rgba(102, 102, 102, 0.60) 55.13%, rgba(0, 0, 0, 0.60) 103.28%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    mix-blend-mode: difference;
+    width: 100%;
+}
+
+.tool_you_learn_heading_text{
+    text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    font-family: "Poppins";
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(180deg, #000 18.28%, #666 62.82%, #000 95.39%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 5vh;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Web Layout Container */
+.tool_you_learn_container-web {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px; /* Prevents stretching on larger screens */
+}
+
+/* Rows with images */
+.tool_you_learn_row {
+    display: flex;
+    gap: 30px; /* Adjusted gap for even spacing */
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    width: 100%;
+}
+
+/* Last row - Single Image Centered */
+.tool_you_learn_last {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Images */
+.tool_you_learn_img {
+    object-fit: contain;
+    background-color: #ffffff;
+    width: 143px;
+    height: 143px;
+    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.20);
+    border-radius: 8px;
+    padding: 10px 11px;
+}
+
+/* Remove box-shadow from Main Image */
+.tool_you_learn_main_img {
+    box-shadow: none;
+    background-color: #f4f4f4;
+}
+
+/* Hide Mobile Layout */
+.tool_you_learn_container-mobile {
+    display: none;
+    
+}
+/* --------------------------------------------------------------- */
+/* -------------------- benifits beyond container------------------ */
+
+.main-learing-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    gap: 30px;
+    width: 100%;
+    height: fit-content;
+    padding: 30px 0px;
+    font-family: var(--fontpoppins);
+}
+
+.sub-learing-img {
+
+    opacity: 0.5;
+    width: 60%;
+    height: 188px;
+
+}
+
+.sub-learing-text {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    margin-top: 3%;
+    font-weight: 700;
+    font-size: 62px;
+    background: linear-gradient(180deg, #000 18.28%, #666 62.82%, #000 95.39%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.main-sub-learing-img {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+/* ------------------------------------------------------------------- */
+
+
+/* ---------------------------- FAQ Container ------------------------ */
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: var(--fontpoppins);
+}
+
+.faq-heading-container {
+    position: relative;
+    text-align: center;
+}
+
+.faq-heading-img-container {
+    height: 184px;
+    opacity: 0.5;
+    
+}
+
+.faq-heading-text-container {
+    position: absolute;
+    top: 4vh;
+    width: 220%;
+    left: -17vw;
+    text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    font-size: 62px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #000 18.28%, #666 62.82%, #000 95.39%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sub-faq-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+/* Left & Right Columns */
+.faq-left-container,
+.faq-right-container {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+/* FAQ Item Styling */
+.faq-right-detail-container,
+.faq-left-detail-container {
+    margin-top: 20px;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    transition: all 0.4s ease-in-out;
+}
+
+/* FAQ Question */
+.faq-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.faq-summary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+/* FAQ Answer Animation */
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-in-out, padding 0.6s ease-in-out;
+    padding: 0 10px;
+    opacity: 0;
+    color: rgb(201, 110, 26);
+}
+
+/* Expand Answer */
+details[open] .faq-content {
+    max-height: 200px;
+    padding-top: 15px;
+    opacity: 1;
+}
+
+/* Icon Rotation */
+.faq-summary i {
+    transition: transform 0.5s ease-in-out;
+}
+
+details[open] .faq-summary i {
+    transform: rotate(180deg);
+}
+
+
+/* ------------------------------------------------------------------- */
+
+/* ----------------- claim your offer ------------------------------ */
+
+.main-claim-your-offer {
+    display: none;
+}
+
+.circular-progres-container{
+    display: none;
+}
+
+/* ----------------------------------------------------------------- */
